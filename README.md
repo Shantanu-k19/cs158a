@@ -23,9 +23,10 @@ python myvlserver.py
 python myvlclient.py
 ```
 
-## Execution Example
+## Execution Examples
 
-### Terminal 1 (Server):
+### Example 1: 8-character message
+#### Terminal 1 (Server):
 ```
 PS E:\Computer Networks\cs158a> python myvlserver.py
 The server is ready to receive
@@ -36,11 +37,68 @@ msg_len_sent: 8
 Connection closed
 ```
 
-### Terminal 2 (Client):
+#### Terminal 2 (Client):
 ```
 PS E:\Computer Networks\cs158a> python myvlclient.py
 Input lowercase sentence:08shantanu
 From Server: SHANTANU
+```
+
+### Example 2: 5-character message
+#### Terminal 1 (Server):
+```
+PS E:\Computer Networks\cs158a> python myvlserver.py
+The server is ready to receive
+Connected from 127.0.0.1
+msg_len: 5
+processed: hello
+msg_len_sent: 5
+Connection closed
+```
+
+#### Terminal 2 (Client):
+```
+PS E:\Computer Networks\cs158a> python myvlclient.py
+Input lowercase sentence:05hello
+From Server: HELLO
+```
+
+### Example 3: Specifying 5 characters from a longer message
+#### Terminal 1 (Server):
+```
+PS E:\Computer Networks\cs158a> python myvlserver.py
+The server is ready to receive
+Connected from 127.0.0.1
+msg_len: 5
+processed: hello
+msg_len_sent: 5
+Connection closed
+```
+
+#### Terminal 2 (Client):
+```
+PS E:\Computer Networks\cs158a> python myvlclient.py
+Input lowercase sentence:05helloworld
+From Server: HELLO
+```
+
+### Example 4: Specifying 3 characters from a longer message
+#### Terminal 1 (Server):
+```
+PS E:\Computer Networks\cs158a> python myvlserver.py
+The server is ready to receive
+Connected from 127.0.0.1
+msg_len: 3
+processed: abc
+msg_len_sent: 3
+Connection closed
+```
+
+#### Terminal 2 (Client):
+```
+PS E:\Computer Networks\cs158a> python myvlclient.py
+Input lowercase sentence:03abcdefgh
+From Server: ABC
 ```
 
 ## Features
