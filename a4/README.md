@@ -13,7 +13,7 @@ This project implements a leader election algorithm in a unidirectional asynchro
 ## 📁 Files
 
 ```
-a3/
+a4/
 ├── myleprocess.py      # Main Python process script
 ├── config.txt          # IP/Port configuration file (per process)
 ├── log1.txt            # Log for process 1
